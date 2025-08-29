@@ -1,0 +1,39 @@
+<script>
+  function isMobile() {
+    const ua = navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod|android|windows phone|blackberry|mobile/i.test(ua);
+  }
+  if (isMobile()) {
+    console.log(":아이폰: 모바일 브라우저");
+    // 모바일 전용 실행 코드
+    document.body.style.backgroundColor = "#F0F9FF";
+  } else {
+    console.log(":컴퓨터: PC 브라우저");
+    // PC 전용 실행 코드
+    document.body.style.backgroundColor = "#FFF0F0";
+  }
+</script>
+9:10
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+</body>
+<script>
+    function isMobile() {
+        const ua = navigator.userAgent.toLowerCase();
+        return /iphone|ipad|ipod|android|windows phone|blackberry|mobile/i.test(ua);
+    }
+    if (isMobile()) {
+        console.log(":아이폰: 모바일 브라우저");
+        // 모바일 전용 실행 코드
+        document.body.style.backgroundColor = "#F0F9FF";
+    } else {
+        console.log(":컴퓨터: PC 브라우저");
+        // PC 전용 실행 코드
+        document.body.style.backgroundColor = "#FFF0F0";
+    }
+</script>
+</html>
